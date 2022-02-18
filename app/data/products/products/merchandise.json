@@ -1,0 +1,13 @@
+{
+	"id": "1",
+	"name": "name of product",
+	"weight": 1,
+
+	"price": 1,
+	"image": "/img/products/bark/1.img",
+	"url": "https://domain.com/products/1",
+	"content": "content",
+	"data-item-shippable": "true",
+	"data-item-taxable": "true",
+	"data-item-has-taxes-included": "true"
+}

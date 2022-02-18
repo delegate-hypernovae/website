@@ -1,0 +1,19 @@
+{
+    "server": {
+        "port": 8598
+    },
+    "views": {
+        "path": "app/views"
+    },
+    "static":{
+        "path":"app/static"
+    },
+    "data": {
+        "path": "app/data"
+    },
+    "settings": {
+        "siteName": "Delegate Hypernovae",
+        "snipcartApiKey": "#",
+        "defaultDonation" : 25
+    }
+}

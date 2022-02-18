@@ -1,0 +1,116 @@
+@basic-font: 'Open Sans', sans-serif;
+@basic-color: #f26522;
+@menu-item-size: 30px;
+@font-size: 16px;
+
+
+
+.animation(@animation, @speed, @repeat){
+  -moz-animation: @animation @speed @repeat linear;
+  -o-animation: @animation @speed @repeat linear;
+  -webkit-animation: @animation @speed @repeat linear;
+  -ms-animation: @animation @speed @repeat linear;
+  animation: @animation @speed @repeat linear;
+}
+
+.transition(@value){
+  -webkit-transition: @value;
+  -moz-transition: @value;
+  -ms-transition: @value;
+  -o-transition: @value;
+  transition: @value;
+}
+
+.transform(@value){
+  -webkit-transform: @value;
+  -moz-transform: @value ;
+  -ms-transform:@value;
+  -o-transform: @value;
+  transform: @value;
+}
+
+.transform-origin(@value){
+  -webkit-transform-origin: @value;
+  -moz-transform-origin: @value ;
+  -ms-transform-origin:@value;
+  -o-transform-origin: @value;
+  transform-origin: @value;
+}
+
+.transform-style-3d(){
+  @value: ~"preserve-3d";
+  -moz-transform-style: @value;
+  -o-transform-style: @value;
+  -ms-transform-style: @value;
+  -webkit-transform-style: @value;
+  transform-style: @value;
+}
+
+.perspective(@size){
+  -webkit-perspective: @size;
+  -moz-perspective: @size;
+  -o-perspective: @size;
+  -ms-perspective: @size;
+  perspective: @size;
+}
+
+.backface-visibility(@value){
+  -webkit-backface-visibility: @value;
+  -moz-backface-visibility:    @value;
+  -o-backface-visibility:     @value;
+  backface-visibility:     @value;
+  -ms-backface-visibility: visible;
+}
+
+.box-sizing(@type){
+  -webkit-box-sizing: @type;
+  -moz-box-sizing:    @type;
+  -o-box-sizing:     @type;
+  box-sizing:     @type;
+  -ms-box-sizing: @type;
+}
+
+.filter(@value){
+  -webkit-filter: @value;
+  -moz-filter: @value;
+  -o-filter: @value;
+  -ms-filter: @value;
+  filter: @value;
+}
+
+.buttonstack{
+  display: inline-block;
+  position: relative;
+}
+
+.glcolor{
+  color: @basic-color;
+  text-shadow: 0 0 30px @basic-color;
+}
+.bcolor{color: @basic-color;}
+
+.fleft{float: left;}
+.fright{float: right;}
+
+.fsize90{font-size: 90%;}
+.fsize100{font-size: 100%;}
+.fsize110{font-size: 110%;}
+
+.mleft10{margin-left: 10px;}
+.mright10{margin-right: 10px;}
+.mtop10{margin-top: 10px;}
+.mbottom10{margin-bottom: 10px;}
+.m10{margin: 10px;}
+
+.mleft20{margin-left: 20px;}
+.mright20{margin-right: 20px;}
+.mtop20{margin-top: 20px;}
+.mbottom20{margin-bottom: 20px;}
+.m20{margin: 20px;}
+
+.w50{width: 50%;}
+.w60{width: 60%;}
+.w70{width: 70%;}
+.w80{width: 80%;}
+.w90{width: 90%;}
+.w100{width: 100%;}

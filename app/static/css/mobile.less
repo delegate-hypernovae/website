@@ -1,0 +1,381 @@
+@import "variables.less";
+
+a {
+  .transition(none);
+}
+
+h1{
+  font-size: 42px;
+  text-align: center;
+}
+
+h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+}
+
+h4{
+  font-size: 24px;
+}
+
+input, textarea{
+  .transition(none);
+}
+
+button{
+  .transition(none);
+}
+
+.input-icon{
+  position: relative;
+
+  i{
+    display: none;
+  }
+
+  input{
+    padding-left: 20px;
+  }
+
+  input:focus{
+    border-color: @basic-color;
+  }
+}
+
+.mobile{
+  visibility: visible;
+  display: block;
+}
+
+
+.minibutton{
+  i{
+    .transition(none);
+  }
+}
+
+body{
+  background: url("../img/bg/mobile.png") repeat;
+  position: relative;
+  overflow: visible;
+}
+
+#background{
+  background: none;
+  display: none;
+}
+
+#texture{
+  display: none;
+}
+
+.fullcontent{
+  display: inline-block;
+  max-width: 100%;
+
+  .menuwrapper{
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .mainmenu{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin: 20px 0 0 0;
+
+    .menu-items{
+      display: table;
+      margin: 0 auto;
+      text-align: center;
+
+      .menuitem{
+        left: 0 !important;
+        top: 0 !important;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        font-size: 90%;
+        float: none;
+        clear: none;
+        vertical-align: middle;
+        width: auto;
+        //height: 80px;
+        border: none;
+        margin: 0 10px;
+        padding: 5px;
+        z-index: 100;
+        text-align: center;
+        cursor: pointer;
+        .transition(none);
+
+        i{
+          opacity: 0.8;
+          float: none;
+          .transition(none);     
+        }
+
+        .menu-title{
+          font-size: 90%;
+          opacity: 0.5;
+          margin: 0;
+          text-align: center;
+          .transition(none);
+        }
+      }
+
+      .menuitem:hover i{
+      	text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      }
+      .menuitem.active i, .menuitem.active .menu-title{
+      	text-shadow: none;
+      }
+    }
+
+    .menucenter{
+      position: relative;
+      display: inline-block;
+      left: 0;
+      top: 0;
+      margin: 30px 0;
+      float: left;
+      width: 100%;
+      text-align: center;
+      height: auto;
+
+      .logo-container{
+        position: relative;
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        left:0;
+        top:0;
+        border-radius: 50%;
+        //box-shadow: 0 0 0 2px @basic-color;
+        //background: rgba(0, 0, 0, 0.3);
+
+        img{
+          position: absolute;
+          left:0;
+          top:0;
+          width: 100%;
+          height: auto;
+          .transition(none);
+        }
+
+        .logo{
+          //display: none;
+          width: 80px;
+          height: 80px;
+          margin: -40px 0 0 -40px;
+          top: 50%;
+          left: 50%;
+          opacity: 1;
+        }
+        .photo{
+          //opacity: 1;
+          //.transform(none);
+        }
+      }
+
+      .logo-container:hover{
+        .logo{
+          opacity: 0;
+        }
+        .photo{
+          opacity: 1;
+          .transform(none);
+        }
+      }
+    }
+
+    #linecontainer{
+      display: none;
+      .transition(none);
+    }
+  }
+}
+
+.page{
+    height: auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+
+    .wrapper{
+      display: inline-block;
+      position: relative;
+      height: auto !important;
+
+
+      overflow: visible;
+
+      .transform(none);
+      .transition(none);
+      opacity: 1;
+
+      .table{
+        height: auto;
+
+        .table-cell{
+          padding: 20px;
+
+          .container{
+            float: left;
+            display: inline-block;
+            color: #fff;
+            max-width: 100%;
+
+            position: relative;
+            width: 100%;
+            min-width: 0;
+          }
+        }
+      }
+    }
+
+    .wrapper.active{
+      .transform(none);
+      opacity: 1;
+    }
+
+
+  }
+
+
+  .skill{
+    margin: 1em auto;
+    float: none;
+    text-align: center;
+
+    .bar{
+      .bar-container{
+        .progress{
+          .transition(none);
+        }
+      }
+
+
+    }
+  }
+
+  .contacts{
+    .input-icon{
+      width: 48%;
+      margin: 0 1%;
+      float: left;
+    }
+
+    textarea{
+      margin-top: 1em;
+      width: 100%;
+      height: 175px;
+      font-size: 90%;
+    }
+
+    a.social{
+      float: left;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .portfolio{
+    position: relative;
+    text-align: center;
+
+    .all-items{
+      overflow: hidden;
+      .transition(none);
+
+        .item{
+          text-align: center;
+          float: none;
+          border-width: 2px;
+          width: 33%;
+
+          .overlay{
+            .transition(none);
+
+            .minibutton{
+              float: left;
+              margin: 10px;
+              width: 40px;
+              height: 40px;
+              .transform(none);
+
+              i{
+                box-shadow: none;
+                font-size: 24px;
+                line-height: 40px;
+              }
+            }
+          }
+
+          img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            z-index: 110;
+            border-radius: 4px;
+            .transition(none);
+          }
+        }
+        .item:hover{
+          .overlay{
+            opacity: 1;
+
+            .minibutton{
+              .transform(none);
+            }
+          }
+          img{
+            .transform(none);
+          }
+        }
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+  .portfolio{
+    .all-items{
+      .item{
+        width: 48%;
+        max-width: 400px;
+      }
+    }
+  }
+}  
+
+
+@media only screen and (max-width: 540px) {
+  .portfolio{
+    .all-items{
+      .item{
+        width: 100%;
+        max-width: 540px;
+      }
+    }
+  }
+} 
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   -moz-min-device-pixel-ratio: 1.5),
+only screen and (     -o-min-device-pixel-ratio: 3/2),
+only screen and (             min-resolution: 144dpi) {
+  #background{
+    background: none;
+  }
+  body{
+    background: url("../img/bg/mobile_@2X.png") repeat;
+  }
+}
